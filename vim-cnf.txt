@@ -1,0 +1,35 @@
+" Set compatibility to Vim only
+set nocompatible
+
+" Automatically wrap text that extends beyond the screen leght
+set wrap
+
+"file detection
+filetype on
+
+"set tab width 4 columns
+set tabstop=4
+
+"set space instead of tabs
+set expandtab
+
+" Highlight cursor line underneath the cursor horizontally.
+set cursorline
+
+" Ignore capital letters during search.
+set ignorecase
+
+"Encoding
+set encoding=utf-8
+
+" Show line numbers
+set number
+
+" Status bar
+set laststatus=2
+
+" Call the .vimrc.plug file
+
+if filereadable(expand("~/.vimrc.plug"))
+    source ~/.vimrc.plug
+endif
