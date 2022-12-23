@@ -1,0 +1,9 @@
+$ export RELEASE="1.0.0"
+
+$ wget https://github.com/antonmedv/countdown/releases/download/v$RELEASE/countdown_linux_amd64 -O countdown
+
+$ chmod +x countdown
+
+$ sudo mv countdown /usr/local/bin
+
+usage : countdown 20s, 1m3s, 2h,3m,5s
