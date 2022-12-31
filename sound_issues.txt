@@ -1,0 +1,11 @@
+
+//jack not detecting : 
+1 - install alsa-tools: $ sudo dnf install alsa-tools;
+2 - open HDA Jack Retask: $ hdajackretask;
+3 - at the top, verify if the right codec is selected in “Select a codec”. On my case, the right one is “Realtek ALC897”;
+4 - on “options”, at the right, click on “Set model=auto” and “advanced override”;
+5 - on “pin configuration”, find Green Headphone, front side; pin ID: 0x1b;
+6 - click “override” and, on “connectivity” set to “headphone”, on “Location” set to “front”, on “device” set to “Headphone”, on “Jack” I set it to “3.5 mm”, on “jack detection” set to “Not present”;
+7 - click “Apply now”, if you get a message saying that the device is busy, click “install boot override” and then reboot.
+
+
