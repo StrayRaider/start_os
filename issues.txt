@@ -1,4 +1,5 @@
 
+//Sound issues
 //jack not detecting : 
 1 - install alsa-tools: $ sudo dnf install alsa-tools;
 2 - open HDA Jack Retask: $ hdajackretask;
@@ -9,3 +10,9 @@
 7 - click “Apply now”, if you get a message saying that the device is busy, click “install boot override” and then reboot.
 
 
+
+// video issues :
+//install ffmpeg
+#sudo dnf -y install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+#sudo dnf -y install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf install ffmpeg
