@@ -10,6 +10,10 @@
 7 - click “Apply now”, if you get a message saying that the device is busy, click “install boot override” and then reboot.
 
 
+// how to connect hdmı
+pacmd set-card-profile 0 output:hdmi-stereo
+
+//sound control app pavucontrol
 
 // video issues :
 //install ffmpeg
