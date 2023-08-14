@@ -21,6 +21,9 @@ pacmd set-card-profile 0 output:hdmi-stereo
 #sudo dnf -y install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf install ffmpeg
 
+//opera video codecs
+copy libffmpeg.. /usr/lib/x86_64-linux-gnu/opera/ here
+
 
 fedora non free video codecs : 
 
