@@ -28,6 +28,8 @@ set number
 " Status bar
 set laststatus=2
 
+set nocursorline
+
 " Call the .vimrc.plug file
 
 if filereadable(expand("~/.vimrc.plug"))
