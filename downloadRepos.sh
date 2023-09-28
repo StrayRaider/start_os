@@ -2,6 +2,7 @@
 
 echo "Downloading all repos here ! "
 
+cd ../
 
 git clone git@github.com:StrayRaider/SolarSdl.git
 git clone git@github.com:StrayRaider/sdl_android_build.git
