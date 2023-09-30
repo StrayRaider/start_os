@@ -1,0 +1,22 @@
+oldB=$( cat /sys/class/backlight/amdgpu_bl1/brightness )
+diff=10
+
+max=$( cat /sys/class/backlight/amdgpu_bl1/max_brightness )
+
+
+while getopts "id" opt
+do
+    case "${opt}" in
+        i) diff=10;;
+        d) diff=-10;;
+    esac
+done
+
+newB=$(($oldB + $diff))
+
+
+if [ $max -gt $newB ] && [ $newB -gt 50 ]
+then
+    echo $newB | cat > /sys/class/backlight/amdgpu_bl1/brightness
+fi
+
